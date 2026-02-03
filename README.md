@@ -35,7 +35,7 @@ SocialHub is a full-stack MERN social media application that allows users to cre
 - Backend: Render
 - Database: MongoDB Atlas
 
----
+```
 
 ## 📂 Project Structure
 
@@ -48,7 +48,7 @@ SocialHub/
 └── README.md
 
 
----
+```
 
 ## ⚙️ Environment Variables
 
