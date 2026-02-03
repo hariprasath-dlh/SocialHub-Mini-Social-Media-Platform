@@ -35,7 +35,20 @@ io.on("connection", (socket) => {
 // Make io accessible to routes
 app.set("io", io);
 
-app.use(cors());
+import cors from "cors";
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:3000",
+      "https://socialhubapp.netlify.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  })
+);
+
 app.use(express.json());
 app.use('/uploads', express.static('uploads')); // Serve uploaded images
 app.use("/api/auth", authRoutes);
