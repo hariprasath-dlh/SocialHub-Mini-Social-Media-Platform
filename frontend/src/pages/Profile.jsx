@@ -139,7 +139,7 @@ const Profile = () => {
         {/* Profile Picture with Upload/Remove */}
         <Box sx={{ position: 'relative', mb: 2 }}>
           <Avatar
-            src={authUser.profileImage ? `http://localhost:5000${authUser.profileImage}` : undefined}
+            src={authUser.profileImage ? `${import.meta.env.VITE_BACKEND_URL}${authUser.profileImage}` : undefined}
             alt={authUser.username}
             sx={{ width: 100, height: 100 }}
           >

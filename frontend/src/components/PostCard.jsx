@@ -66,7 +66,7 @@ const PostCard = ({ post, onUpdate }) => {
                 <CardMedia
                     component="img"
                     height="300"
-                    image={`http://localhost:5000${post.image}`}
+                    image={`${import.meta.env.VITE_BACKEND_URL}${post.image}`}
                     alt="Post image"
                     sx={{ objectFit: 'cover' }}
                 />
