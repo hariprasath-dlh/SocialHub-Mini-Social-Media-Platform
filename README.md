@@ -1,28 +1,41 @@
-# SocialHub
+# SocialHub – Mini Social Media Platform
 
-A Mini Social Post Application built with the MERN stack.
+SocialHub is a full-stack MERN social media application that allows users to create accounts, share text or image posts, view a public feed, and interact with posts through likes and comments. This project is built as part of a full-stack internship assignment, following real-world development and deployment practices.
 
-## Tech Stack
-- **Frontend:** React.js (Vite)
-- **Backend:** Node.js, Express
-- **Database:** MongoDB
-- **Collections:** Users, Posts
+---
 
-## Structure
-- `/frontend`: React application
-- `/backend`: Node.js/Express server
+## 🚀 Features
 
-## How to Run
+- User authentication (Sign up & Login)
+- Create posts with text, image, or both
+- Public feed displaying all user posts
+- Like and comment on posts
+- Display total likes and comments count
+- Stores usernames of users who liked or commented
+- Responsive UI for mobile, tablet, and desktop
+
+---
+
+## 🛠️ Tech Stack
+
 ### Frontend
-1. `cd frontend`
-2. `npm install`
-3. `npm run dev`
+- React.js
+- HTML, CSS, JavaScript
+- UI Styling (Material UI / Bootstrap / CSS)
 
 ### Backend
-1. `cd backend`
-2. `npm install`
-3. `node server.js`
+- Node.js
+- Express.js
 
-## Deployment
-- Frontend: [Vercel Link Placeholder]
-- Backend: [Render Link Placeholder]
+### Database
+- MongoDB Atlas
+
+### Deployment
+- Frontend: Vercel / Netlify
+- Backend: Render
+- Database: MongoDB Atlas
+
+---
+
+## 📂 Project Structure
+
