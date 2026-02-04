@@ -35,14 +35,12 @@ io.on("connection", (socket) => {
 // Make io accessible to routes
 app.set("io", io);
 
-import cors from "cors";
-
+// CORS configuration for localhost development
 app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "http://localhost:3000",
-      "https://socialhubapp.netlify.app"
+      "http://localhost:3000"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
